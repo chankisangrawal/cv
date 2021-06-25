@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Style.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="./css/all.css">
+    <title>form submit</title>
+</head>
+<style>
+    body{
+       
+       background-image: url(https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-attachment: fixed;
+   background-repeat:   required repeat;
+    background-size: contain;
+    background-position: center center;
+    }
+ 
+   fieldset
+   {
+    margin-top:40px ;
+    background-position: center center;
+       color: azure;
+        width: 80%;
+      font-size: 30px;
+      border: 5px solid black;
+      border-radius: 10px;
+      font-family: Arial;
+   background-color: rgba(250, 109, 35,.1);
+   padding: 60px;
+   padding-top: 20px ;
+   }
+   form
+   {
+       
+       margin:20px 20vw;
+     }
+   input
+   {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   height: 20PX;
+   background-color:azure;
+   height: 30px;
+   color: green;
+   font-size: 20px;
+   }
+  #email,#password
+   {
+   width: 100%;
+   height: 30px;
+   }
+   @media (min-width: 320px) and (max-width: 767px)
+   {
+       fieldset
+       {
+
+           width: -10%;
+           
+       }
+       form
+   {   
+   margin-left:10px ;
+       
+     }
+
+   }
+   
+</style>
+<body>
+     <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+     <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="admin/post/index.html" class="text-gray"><i class="fa fa-user"></i> CDE blogs</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://careerdreams.co.in/maininfo.php">about</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="signup.html">SignUp</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="login.html">Login</a>
+                    </li>
+                   
+                    
+                    <li class="nav-link">
+                        <a href="https://careerdreams.co.in/contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.facebook.com/Career-Dreams-Educations-949660861856364/"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCsGTUUra17M1DT1nGDFyUOg"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/career-dreams-educations-4091b3181/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+   
+    <form action="#" method="POST">
+        <fieldset>
+          
+           
+            <label for="email">username:</label><br>
+            <input type="email" name="email" id="email"  required ><br>
+            <label for="password">Password:</label><br>
+           <input type="password" name="password" id="password">
+            <input type="submit" id="submit" name="submit">
+
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

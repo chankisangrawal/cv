@@ -1,0 +1,258 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+
+header
+{
+    background-color: green;
+    height: 66px;;
+}
+header *
+{
+    color:black;
+}
+header .logo
+{
+    float: left;
+  
+    height: inherit;
+   margin-left: 2em;
+}
+header .logo-text
+
+{
+    margin: 10px;
+}
+header .logo-text span
+{
+    color: yellow;
+    font-style: italic;
+}
+header ul{
+    float: right;
+   
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+}
+.showing
+{
+    max-height: 100rem;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li ul{
+    float: left;
+    position: absolute;
+    top: 66px;
+    width: 140px;
+  right: 0px;
+  display: none;
+
+}
+header ul li:hover ul
+{
+    background-color: green;
+    display: block;
+}
+header ul li ul li{
+     width: 100%;
+
+}
+header ul li ul a{
+    padding: 10px;
+
+}
+header ul li ul li a:hover{
+    background-color: grey;
+}
+header ul li ul li.logout
+{
+ color: red;   
+}
+
+header ul li a
+{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li a:hover
+{
+    background: pink;
+    transition: 2s;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+header .menu-toggle
+{
+    display: none;
+    /*media queries*/
+}@media only screen and (max-width:750px)
+{
+    header ul{
+        width: 100%;
+        background-color: green;
+        max-height: 0px;
+    }
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+        
+
+    }
+    header ul li ul li a{
+        padding: 10 px;
+        background-color: green;
+        color:white;
+        padding-left: 50px;
+    } 
+    header ul li ul li a:hover
+    {
+        color: gren;
+    }
+    
+    header ul li ul li .logout{
+     color:red;
+
+    } 
+    header .menu-toggle
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size:1.9rem ;
+    }
+header .logo
+{
+    
+   margin-left: 1.9em;
+}
+header .logo-text
+
+{
+    font-size: 2rem;
+}
+}
+
+.admin-wrapper
+{
+   display: flex;
+    height:calc(100%-66px) ;
+}
+.admin-wrapper .left-side
+{
+    flex:2;
+    height:90vh;
+
+    border: 5px solid red;
+    background-color:rgb(19, 184, 134);
+}
+.admin-wrapper .left-side ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.admin-wrapper .left-side ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid darkblue;
+}
+.admin-wrapper .left-side ul li a:hover
+{
+    background-color: black;
+}
+
+.admin-wrapper .admin-content
+{
+    flex:8;
+    height: 90vh;
+
+    border: 5px solid rgb(132, 0, 255);
+    background-color: #fff;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+.btn-big
+{
+    padding: 5px 15px;
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: green;
+    color: wheat;
+}
+.admin-content .page-title
+{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+
+}
+th,td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid green;
+}
+.edit
+{
+    color: green;
+}
+.delete
+{
+    color: red;
+}
+.publish
+{
+  color: blue;
+}
+.edit:hover,
+.delete:hover,
+.publish:hover
+{
+    text-decoration:underline;
+}
+form div{
+    margin-bottom: 30px;
+}
+#title,.select
+{
+    width: 100%;
+    height: 40px;
+}
+form div label{
+   font-size:24px ;
+}
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>form submit</title>
+    <link rel="stylesheet" href="./css/Style.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="./css/all.css">
+</head>
+<style>
+    body{
+       
+       background-image: url(https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-attachment: fixed;
+   background-repeat:   required repeat;
+    background-size: contain;
+    background-position: center center;
+    }
+   h1{font-size: 40px;}
+   fieldset
+   {
+    background-position: center center;
+       color: azure;
+        width: 80%;
+      font-size: 30px;
+      border: 5px solid black;
+      border-radius: 10px;
+      font-family: Arial;
+   background-color: rgba(250, 109, 35,.1);
+   padding: 60px;
+   padding-top: 20px ;
+   }
+   form
+   {
+       margin:20px 20vw;
+     }
+   input
+   {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   height: 20PX;
+   background-color:azure;
+   height: 30px;
+   color: green;
+   font-size: 20px;
+   }
+   #fname,#lname,#contact,#whatsapp,#email,#refername,#other,#course,#CV,#submit
+   {
+   width: 100%;
+   height: 30px;
+   }
+   @media (min-width: 320px) and (max-width: 767px)
+   {
+       fieldset
+       {
+
+           width: -10%;
+           
+       }
+       form
+   {   
+   margin-left:10px ;
+       
+     }
+
+   }
+   
+</style>
+<body>
+      <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+      <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="admin/post/index.html" class="text-gray"><i class="fa fa-user"></i> CDE blogs</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://careerdreams.co.in/maininfo.php">about</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="signup.html">SignUp</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="login.html">Login</a>
+                    </li>
+                   
+                    
+                    <li class="nav-link">
+                        <a href="https://careerdreams.co.in/contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.facebook.com/Career-Dreams-Educations-949660861856364/"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCsGTUUra17M1DT1nGDFyUOg"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/career-dreams-educations-4091b3181/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+   
+    <form action="submit.php" method="POST">
+        <fieldset>
+          
+            <label for="fname">Firstname:</label><br>
+            <input type="text" id="fname" name="fname"  required ><br>
+            <label for="lname">LastName:</label><br>
+            <input type="text" id="lname" name="lname"  required ><br>
+            <label for="contact">contact Number:</label><br>
+            <input type="number" id="contact" name="contact"  required ><br>
+            <label for="whatsapp"> Whatsapp Number:</label><br>
+            <input type="number" name="whatsapp" id="whatsapp"  required ><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"  required ><br>
+            <label for="refername">Referance Name:</label><br>
+            <input type="text" id="refername" name="refername"  required ><br>
+            <label for="hq"> Higher Qualification:</label><br>
+            <input type="radio" name="hq" value="High School"><label>High School </label> <br>
+            <input type="radio" name="hq" value=" Inetermediate"><label>Inetermediate</label> <br>
+            <input type="radio" name="hq" value="undergraduate"><label>Undergraduate</label><br>
+            <input type="radio" name="hq" value="postgraduate"><label>Post graduate</label><br>
+            <label> Other:</label><br>
+            <input type="text" name="other" id="other"><br>
+            <label for="course">Course:</label><br>
+            <input type="text" name="course" id="course"  required ><br>
+            <label for="internship">Area of interest in internship : </label><br>
+            <input type="checkbox"  id="HR" name="HR" value="HR">
+             <label for="HR">HR</label><br>
+            <input type="checkbox"  id="marketing" name="marketing" value="marketing">
+            <label for="marketing">Marketing</label><br>
+            <input type="checkbox" id="finance" name="finance" value="finance">
+            <label for="finance">Finance</label><br>
+            <input type="checkbox"  id="web" name="web" value="web Development">
+            <label id="web">Web Development</label><br>
+            <label for="CV">Uploade Your CV</label><br>
+            <input type="file" id="CV" name="CV" required><br>
+            <input type="submit" id="submit" name="submit">
+
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
